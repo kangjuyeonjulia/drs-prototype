@@ -186,7 +186,7 @@ export default function OsmoHero({ onNavigateToWorkList, onStageChange, skipIntr
         }`}
       >
         {/* Main Headline */}
-        <h1 className="text-8xl md:text-9xl font-bold text-white mb-8 tracking-tight leading-none">
+        <h1 className="text-6xl md:text-8xl font-bold text-white mb-8 tracking-tight leading-none whitespace-nowrap">
           Design That Moves
         </h1>
 
