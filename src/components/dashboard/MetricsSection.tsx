@@ -86,7 +86,7 @@ export default function MetricsSection() {
                   {metric.unit}
                 </span>
               )}
-              {metric.trend !== null && (
+              {metric.trend !== null && metric.trend !== undefined && (
                 <span className={`text-lg ml-2 font-semibold ${
                   metric.trend < 0 ? 'text-green-600' : 'text-red-600'
                 }`}>

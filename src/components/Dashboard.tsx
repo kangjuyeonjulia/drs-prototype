@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import OsmoHero from './dashboard/OsmoHero';
 import ProjectsCarousel from './dashboard/ProjectsCarousel';
 import MetricsSection from './dashboard/MetricsSection';

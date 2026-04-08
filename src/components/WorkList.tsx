@@ -1,6 +1,5 @@
 import { Grid3x3, List, Search } from 'lucide-react';
 import { useState } from 'react';
-import Sidebar from './Sidebar';
 
 const workItems = [
   {
@@ -76,9 +75,6 @@ export default function WorkList() {
 
   return (
     <div className="flex h-full overflow-hidden">
-      {/* LNB - Left Navigation Bar */}
-      <Sidebar />
-
       {/* Main Content */}
       <div className="flex-1 flex overflow-hidden">
         <div className="flex-1 p-6 bg-gray-50 overflow-y-auto">
