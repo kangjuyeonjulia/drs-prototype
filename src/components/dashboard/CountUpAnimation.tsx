@@ -11,6 +11,7 @@ export default function CountUpAnimation({ end, duration = 2000 }: CountUpAnimat
   useEffect(() => {
     let startTime: number | null = null;
     const startValue = 0;
+    let animationId: number;
 
     const animate = (timestamp: number) => {
       if (!startTime) startTime = timestamp;
@@ -23,17 +24,20 @@ export default function CountUpAnimation({ end, duration = 2000 }: CountUpAnimat
       setCount(currentCount);
 
       if (progress < 1) {
-        requestAnimationFrame(animate);
+        animationId = requestAnimationFrame(animate);
       } else {
         setCount(end);
       }
     };
 
     const timer = setTimeout(() => {
-      requestAnimationFrame(animate);
+      animationId = requestAnimationFrame(animate);
     }, 300);
 
-    return () => clearTimeout(timer);
+    return () => {
+      clearTimeout(timer);
+      if (animationId) cancelAnimationFrame(animationId);
+    };
   }, [end, duration]);
 
   return <span>{count}</span>;
