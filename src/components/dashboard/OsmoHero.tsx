@@ -187,9 +187,7 @@ export default function OsmoHero({ onNavigateToWorkList, onStageChange, skipIntr
       >
         {/* Main Headline */}
         <h1 className="text-8xl md:text-9xl font-bold text-white mb-8 tracking-tight leading-none">
-          Design That
-          <br />
-          Moves
+          Design That Moves
         </h1>
 
         {/* Subtitle */}
