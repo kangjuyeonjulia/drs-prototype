@@ -91,7 +91,7 @@ export default function CharacterCarousel() {
   return (
     <div className="overflow-hidden">
       <h2 className="text-5xl font-bold text-gray-900 mb-12 text-center">
-        Characters
+        Say Hello to the Characters
       </h2>
 
       <div

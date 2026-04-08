@@ -3,39 +3,27 @@ import { useState, useEffect, useRef } from 'react';
 const projects = [
   {
     id: 1,
-    title: "[Let's Get Rich] RO x LGR",
-    image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&h=600&fit=crop',
-    category: 'Game Design',
+    title: 'Hello Friends Booth',
+    image: '/images/hellofriendsbooth.png',
+    category: 'Brand Experience',
   },
   {
     id: 2,
-    title: 'FC Credit Card Campaign',
-    image: 'https://images.unsplash.com/photo-1626785774573-4b799315345d?w=800&h=600&fit=crop',
-    category: 'Marketing',
+    title: 'LYP Premium',
+    image: '/images/lyppremium.png',
+    category: 'Product Design',
   },
   {
     id: 3,
-    title: 'LINE Bubble 2 Banners',
-    image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&h=600&fit=crop',
-    category: 'Game Design',
+    title: 'LINE × Netflix',
+    image: '/images/line-netflix.png',
+    category: 'Partnership',
   },
   {
     id: 4,
-    title: 'LCM - Wuukie & Soya',
-    image: 'https://images.unsplash.com/photo-1626785774625-ddcddc3445e9?w=800&h=600&fit=crop',
-    category: 'Character Design',
-  },
-  {
-    id: 5,
-    title: 'LINE Friends Collection',
-    image: 'https://images.unsplash.com/photo-1618556450994-a6a128ef0d9d?w=800&h=600&fit=crop',
-    category: 'Brand Design',
-  },
-  {
-    id: 6,
-    title: 'LYP Premium UI',
-    image: 'https://images.unsplash.com/photo-1618556450991-2f1af64e8191?w=800&h=600&fit=crop',
-    category: 'Product Design',
+    title: 'Tech Week',
+    image: '/images/techweek.png',
+    category: 'Event Design',
   },
 ];
 

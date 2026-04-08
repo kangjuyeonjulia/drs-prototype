@@ -108,15 +108,24 @@ export default function OsmoHero({ onNavigateToWorkList, onStageChange, skipIntr
           stage >= 5 ? 'opacity-100 scale-100' : 'opacity-0 scale-110'
         }`}
       >
+        {/* Fallback background image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('/images/hello-friends.webp')" }}
+        />
+
+        {/* Video */}
         <video
           autoPlay
           loop
           muted
           playsInline
+          poster="/images/hello-friends.webp"
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/images/hello-friends-video.mp4" type="video/mp4" />
+          <source src="/images/hero-video.mp4" type="video/mp4" />
         </video>
+
         {/* Dark overlay for text readability */}
         <div className="absolute inset-0 bg-black/40" />
       </div>
